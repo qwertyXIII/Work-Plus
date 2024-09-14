@@ -1,0 +1,30 @@
+.page {
+  background-color: #111;
+  min-height: 100vh;
+  font-family: 'helvetica', Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+*::-webkit-scrollbar {
+  width: 7px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #333;
+  /* цвет дорожки */
+  height: 90%;
+  border-radius: 20px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #444;
+  /* цвет плашки */
+  border-radius: 20px;
+  /* закругления плашки */
+  border: none;
+  /* padding вокруг плашки */
+}
+
+* {outline: 1px green dotted;}

@@ -1,0 +1,6 @@
+.task__todo {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 5px 0;
+}

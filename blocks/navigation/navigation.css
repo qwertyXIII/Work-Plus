@@ -1,0 +1,12 @@
+.navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  background-color: #222;
+  border-radius: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 5px 0 5px 5px;
+  flex-grow: 1;
+  align-items: stretch;
+}

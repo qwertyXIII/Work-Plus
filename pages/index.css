@@ -1,0 +1,41 @@
+/*общ. стили*/
+@import url(../vendor/normalize.css);
+@import url(../blocks/page/page.css);
+/* DIFFERENT */
+@import url(../blocks/link/link.css);
+@import url(../blocks/text/text.css);
+@import url(../blocks/button/button.css);
+@import url(../blocks/button/button_active.css);
+/* HEADER */
+@import url(../blocks/header/header.css);
+/* MAIN */
+@import url(../blocks/main/main.css);
+/* NAVIGATION */
+@import url(../blocks/navigation/navigation.css);
+@import url(../blocks/navigation/__button/navigation__button.css);
+/* WINDOW */
+@import url(../blocks/window/window.css);
+@import url(../blocks/window/window_active.css);
+/* WORKSPACE */
+@import url(../blocks/workspace/workspace.css);
+@import url(../blocks/workspace/__header/workspace__header.css);
+@import url(../blocks/workspace/__container/workspace__container.css);
+@import url(../blocks/workspace/__tab/workspace__tab.css);
+@import url(../blocks/workspace/__tab/workspace__tab_active.css);
+/* TASK */
+@import url(../blocks/task/task.css);
+@import url(../blocks/task/__name/task__name.css);
+@import url(../blocks/task/__description/task__description.css);
+@import url(../blocks/task/__todos/task__todos.css);
+@import url(../blocks/task/__todo/task__todo.css);
+@import url(../blocks/task/__todo-checkbox/task__todo-checkbox.css);
+@import url(../blocks/task/__todo-text/task__todo-text.css);
+@import url(../blocks/task/__images/task__images.css);
+@import url(../blocks/task/__image/task__image.css);
+@import url(../blocks/task/__worker/task__worker.css);
+@import url(../blocks/task/__date/task__date.css);
+/* FOOTER */
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__chapter/footer__chapter.css);
+@import url(../blocks/footer/__text/footer__text.css);
+@import url(../blocks/footer/__link/footer__link.css);
