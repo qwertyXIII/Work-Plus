@@ -1,0 +1,11 @@
+.task__button {
+  width: 100%;
+  border-radius: 10px;
+  background-color: #333;
+  height: 30px;
+  margin: 5px 0 5px 0;
+}
+.task__button:hover {
+  background-color: white;
+  color: black;
+}

@@ -1,0 +1,13 @@
+.task__indicator {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  filter: blur(3px);
+  transition: .2s;
+}
+.task:hover .task__indicator {
+  filter: blur(10px);
+}

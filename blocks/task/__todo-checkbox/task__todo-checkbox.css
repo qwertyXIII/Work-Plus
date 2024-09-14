@@ -14,11 +14,16 @@
   border-radius: 5px;
   transition: 200ms;
   cursor: pointer;
+  background-position: 0 50px;
+  background-size: 0%;
+  background-repeat: no-repeat;
+  background-image: url(/images/verification_checkmark_symbol_u7aa5jwdkwt0.svg);
 }
 .task__todo-checkbox:hover::after {
   background-color: #444;
 }
 .task__todo-checkbox:checked::after {
   background-color: white;
-  background-image: url(/images/verification_checkmark_symbol_u7aa5jwdkwt0.svg);
+  background-position: center;
+  background-size: 70%;
 }

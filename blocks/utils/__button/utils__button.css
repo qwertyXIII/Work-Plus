@@ -1,0 +1,14 @@
+.utils__button {
+  display: block; 
+  padding: 10px;
+  height: max-content;
+  background-color: #222;
+  width: 100%;
+  margin: 0 0 10px 0;
+}
+.utils__button:hover {
+  background-color: white;
+}
+.utils__button:hover .utils__name {
+  color: black;
+}

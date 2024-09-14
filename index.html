@@ -15,15 +15,15 @@
 
     <main class="main">
       <nav class="navigation">
-        <button class="navigation__button button">Показатели</button>
-        <button class="navigation__button button">Рабочая область</button>
-        <button class="navigation__button button">Утилиты</button>
+        <button class="navigation__button button" id="stats">Показатели</button>
+        <button class="navigation__button button" id="workspace">Рабочая область</button>
+        <button class="navigation__button button" id="utils">Утилиты</button>
       </nav>
 
-      <div class="stats window">
+      <div class="stats window" name="stats">
       </div>
 
-      <div class="workspace window window_active">
+      <div class="workspace window" name="workspace">
         <div class="workspace__header">
           <button class="button workspace__tab workspace__tab_active">Мои задачи</button>
           <button class="button workspace__tab">Не назначеные задачи</button>
@@ -31,10 +31,11 @@
           <button class="button workspace__tab">Распределение задач</button>
           <button class="button workspace__tab">Создание задач</button>
         </div>
-        <div class="workspace__container">
+        <div class="workspace__container-task">
 
           <div class="task">
-            <p class="task__name">Lorem ipsum dolor sit amet</p>
+            <div class="task__indicator" style="background-color: green;"></div>
+            <p class="task__name">Lorem ipsum</p>
             <p class="task__description">nsectetur adipiscing elit. Vivamus vel efficitur tellus. Morbi varius felis eget nibh porta, et lacinia est ullamcorper. Donec malesuada leo sed lorem lobortis tempus. Aenean pulvinar ac turpis non iaculis. Nullam sit amet lacus vitae augue maximus euismod sit amet sit amet felis.</p>
             <div class="task__todos">
               <div class="task__todo">
@@ -51,21 +52,18 @@
               </div>
             </div>
             <div class="task__images">
-              <img src="./images/god.jpg" alt="" class="task__image">
+              <img src="./images/god.jpg" alt="" class="task__image">              
               <img src="https://i06.fotocdn.net/s205/94a92d5ade84ce23/public_pin_l/2362727257.jpg" alt="" class="task__image">
               <img src="https://i.pinimg.com/736x/75/d6/b0/75d6b048f736e4bbd7e6210b71d4d400.jpg" alt="" class="task__image">
             </div>
+            <button class="task__button button">Завершить</button>
             <p class="task__worker">Фио сотрудника </p>
             <p class="task__date">13.09.2024</p>
           </div>
 
-
-
-
-    
-          
           <div class="task">
-            <p class="task__name">sit amet</p>
+            <div class="task__indicator" style="background-color: green;"></div>
+            <p class="task__name">Lorem ipsum</p>
             <p class="task__description">nsectetur adipiscing elit. Vivamus vel efficitur tellus. Morbi varius felis eget nibh porta, et lacinia est ullamcorper. Donec malesuada leo sed lorem lobortis tempus. Aenean pulvinar ac turpis non iaculis. Nullam sit amet lacus vitae augue maximus euismod sit amet sit amet felis.</p>
             <div class="task__todos">
               <div class="task__todo">
@@ -82,50 +80,203 @@
               </div>
             </div>
             <div class="task__images">
-              <img src="./images/god.jpg" alt="" class="task__image">
+              <img src="./images/god.jpg" alt="" class="task__image">              
               <img src="https://i06.fotocdn.net/s205/94a92d5ade84ce23/public_pin_l/2362727257.jpg" alt="" class="task__image">
               <img src="https://i.pinimg.com/736x/75/d6/b0/75d6b048f736e4bbd7e6210b71d4d400.jpg" alt="" class="task__image">
             </div>
+            <button class="task__button button">Завершить</button>
             <p class="task__worker">Фио сотрудника </p>
             <p class="task__date">13.09.2024</p>
           </div>
+
           <div class="task">
-            <p class="task__name">Lorem ipsum dolor sit amet</p>
-            <p class="task__description">Morbi varius felis eget nibh porta, et lacinia est ullamcorper. Donec malesuada leo sed lorem lobortis tempus. Aenean pulvinar ac turpis non iaculis. Nullam sit amet lacus vitae augue maximus euismod sit amet sit amet felis.</p>
+            <div class="task__indicator" style="background-color: green;"></div>
+            <p class="task__name">Lorem ipsum</p>
+            <p class="task__description">nsectetur adipiscing elit. Vivamus vel efficitur tellus. Morbi varius felis eget nibh porta, et lacinia est ullamcorper. Donec malesuada leo sed lorem lobortis tempus. Aenean pulvinar ac turpis non iaculis. Nullam sit amet lacus vitae augue maximus euismod sit amet sit amet felis.</p>
             <div class="task__todos">
+              <div class="task__todo">
+                <input type="checkbox" name="" id="" class="task__todo-checkbox">
+                <p class="task__todo-text">Nullam vel dui ut lectus facilisis vehicula.</p>
+              </div>
+              <div class="task__todo">
+                <input type="checkbox" name="" id="" class="task__todo-checkbox">
+                <p class="task__todo-text">Ut sit amet volutpat velit.</p>
+              </div>
+              <div class="task__todo">
+                <input type="checkbox" name="" id="" class="task__todo-checkbox">
+                <p class="task__todo-text">Suspendisse malesuada aliquam consectetur.</p>
+              </div>
             </div>
             <div class="task__images">
-              <img src="./images/god.jpg" alt="" class="task__image">
+              <img src="./images/god.jpg" alt="" class="task__image">              
               <img src="https://i06.fotocdn.net/s205/94a92d5ade84ce23/public_pin_l/2362727257.jpg" alt="" class="task__image">
               <img src="https://i.pinimg.com/736x/75/d6/b0/75d6b048f736e4bbd7e6210b71d4d400.jpg" alt="" class="task__image">
             </div>
+            <button class="task__button button">Завершить</button>
             <p class="task__worker">Фио сотрудника </p>
             <p class="task__date">13.09.2024</p>
           </div>
+
           <div class="task">
-            <p class="task__name">Lorem ipsum dolor sit amet</p>
-            <p class="task__description">Morbi varius felis eget nibh porta, et lacinia est ullamcorper. Donec malesuada leo sed lorem lobortis tempus. Aenean pulvinar ac turpis non iaculis. Nullam sit amet lacus vitae augue maximus euismod sit amet sit amet felis.</p>
+            <div class="task__indicator" style="background-color: green;"></div>
+            <p class="task__name">Lorem ipsum</p>
+            <p class="task__description">nsectetur adipiscing elit. Vivamus vel efficitur tellus. Morbi varius felis eget nibh porta, et lacinia est ullamcorper. Donec malesuada leo sed lorem lobortis tempus. Aenean pulvinar ac turpis non iaculis. Nullam sit amet lacus vitae augue maximus euismod sit amet sit amet felis.</p>
             <div class="task__todos">
+              <div class="task__todo">
+                <input type="checkbox" name="" id="" class="task__todo-checkbox">
+                <p class="task__todo-text">Nullam vel dui ut lectus facilisis vehicula.</p>
+              </div>
+              <div class="task__todo">
+                <input type="checkbox" name="" id="" class="task__todo-checkbox">
+                <p class="task__todo-text">Ut sit amet volutpat velit.</p>
+              </div>
+              <div class="task__todo">
+                <input type="checkbox" name="" id="" class="task__todo-checkbox">
+                <p class="task__todo-text">Suspendisse malesuada aliquam consectetur.</p>
+              </div>
             </div>
             <div class="task__images">
-              <img src="./images/god.jpg" alt="" class="task__image">
+              <img src="./images/god.jpg" alt="" class="task__image">              
               <img src="https://i06.fotocdn.net/s205/94a92d5ade84ce23/public_pin_l/2362727257.jpg" alt="" class="task__image">
               <img src="https://i.pinimg.com/736x/75/d6/b0/75d6b048f736e4bbd7e6210b71d4d400.jpg" alt="" class="task__image">
             </div>
+            <button class="task__button button">Завершить</button>
             <p class="task__worker">Фио сотрудника </p>
             <p class="task__date">13.09.2024</p>
           </div>
 
+          <div class="task">
+            <div class="task__indicator" style="background-color: green;"></div>
+            <p class="task__name">Lorem ipsum</p>
+            <p class="task__description">nsectetur adipiscing elit. Vivamus vel efficitur tellus. Morbi varius felis eget nibh porta, et lacinia est ullamcorper. Donec malesuada leo sed lorem lobortis tempus. Aenean pulvinar ac turpis non iaculis. Nullam sit amet lacus vitae augue maximus euismod sit amet sit amet felis.</p>
+            <div class="task__todos">
+              <div class="task__todo">
+                <input type="checkbox" name="" id="" class="task__todo-checkbox">
+                <p class="task__todo-text">Nullam vel dui ut lectus facilisis vehicula.</p>
+              </div>
+              <div class="task__todo">
+                <input type="checkbox" name="" id="" class="task__todo-checkbox">
+                <p class="task__todo-text">Ut sit amet volutpat velit.</p>
+              </div>
+              <div class="task__todo">
+                <input type="checkbox" name="" id="" class="task__todo-checkbox">
+                <p class="task__todo-text">Suspendisse malesuada aliquam consectetur.</p>
+              </div>
+            </div>
+            <div class="task__images">
+              <img src="./images/god.jpg" alt="" class="task__image">              
+              <img src="https://i06.fotocdn.net/s205/94a92d5ade84ce23/public_pin_l/2362727257.jpg" alt="" class="task__image">
+              <img src="https://i.pinimg.com/736x/75/d6/b0/75d6b048f736e4bbd7e6210b71d4d400.jpg" alt="" class="task__image">
+            </div>
+            <button class="task__button button">Завершить</button>
+            <p class="task__worker">Фио сотрудника </p>
+            <p class="task__date">13.09.2024</p>
+          </div>
 
+          <div class="task">
+            <div class="task__indicator" style="background-color: green;"></div>
+            <p class="task__name">Lorem ipsum</p>
+            <p class="task__description">nsectetur adipiscing elit. Vivamus vel efficitur tellus. Morbi varius felis eget nibh porta, et lacinia est ullamcorper. Donec malesuada leo sed lorem lobortis tempus. Aenean pulvinar ac turpis non iaculis. Nullam sit amet lacus vitae augue maximus euismod sit amet sit amet felis.</p>
+            <div class="task__todos">
+              <div class="task__todo">
+                <input type="checkbox" name="" id="" class="task__todo-checkbox">
+                <p class="task__todo-text">Nullam vel dui ut lectus facilisis vehicula.</p>
+              </div>
+              <div class="task__todo">
+                <input type="checkbox" name="" id="" class="task__todo-checkbox">
+                <p class="task__todo-text">Ut sit amet volutpat velit.</p>
+              </div>
+              <div class="task__todo">
+                <input type="checkbox" name="" id="" class="task__todo-checkbox">
+                <p class="task__todo-text">Suspendisse malesuada aliquam consectetur.</p>
+              </div>
+            </div>
+            <div class="task__images">
+              <img src="./images/god.jpg" alt="" class="task__image">              
+              <img src="https://i06.fotocdn.net/s205/94a92d5ade84ce23/public_pin_l/2362727257.jpg" alt="" class="task__image">
+              <img src="https://i.pinimg.com/736x/75/d6/b0/75d6b048f736e4bbd7e6210b71d4d400.jpg" alt="" class="task__image">
+            </div>
+            <button class="task__button button">Завершить</button>
+            <p class="task__worker">Фио сотрудника </p>
+            <p class="task__date">13.09.2024</p>
+          </div>
 
+          <div class="task">
+            <div class="task__indicator" style="background-color: green;"></div>
+            <p class="task__name">Lorem ipsum</p>
+            <p class="task__description">nsectetur adipiscing elit. Vivamus vel efficitur tellus. Morbi varius felis eget nibh porta, et lacinia est ullamcorper. Donec malesuada leo sed lorem lobortis tempus. Aenean pulvinar ac turpis non iaculis. Nullam sit amet lacus vitae augue maximus euismod sit amet sit amet felis.</p>
+            <div class="task__todos">
+              <div class="task__todo">
+                <input type="checkbox" name="" id="" class="task__todo-checkbox">
+                <p class="task__todo-text">Nullam vel dui ut lectus facilisis vehicula.</p>
+              </div>
+              <div class="task__todo">
+                <input type="checkbox" name="" id="" class="task__todo-checkbox">
+                <p class="task__todo-text">Ut sit amet volutpat velit.</p>
+              </div>
+              <div class="task__todo">
+                <input type="checkbox" name="" id="" class="task__todo-checkbox">
+                <p class="task__todo-text">Suspendisse malesuada aliquam consectetur.</p>
+              </div>
+            </div>
+            <div class="task__images">
+              <img src="./images/god.jpg" alt="" class="task__image">              
+              <img src="https://i06.fotocdn.net/s205/94a92d5ade84ce23/public_pin_l/2362727257.jpg" alt="" class="task__image">
+              <img src="https://i.pinimg.com/736x/75/d6/b0/75d6b048f736e4bbd7e6210b71d4d400.jpg" alt="" class="task__image">
+            </div>
+            <button class="task__button button">Завершить</button>
+            <p class="task__worker">Фио сотрудника </p>
+            <p class="task__date">13.09.2024</p>
+          </div>
 
-
+          <div class="task">
+            <div class="task__indicator" style="background-color: green;"></div>
+            <p class="task__name">Lorem ipsum</p>
+            <p class="task__description">nsectetur adipiscing elit. Vivamus vel efficitur tellus. Morbi varius felis eget nibh porta, et lacinia est ullamcorper. Donec malesuada leo sed lorem lobortis tempus. Aenean pulvinar ac turpis non iaculis. Nullam sit amet lacus vitae augue maximus euismod sit amet sit amet felis.</p>
+            <div class="task__todos">
+              <div class="task__todo">
+                <input type="checkbox" name="" id="" class="task__todo-checkbox">
+                <p class="task__todo-text">Nullam vel dui ut lectus facilisis vehicula.</p>
+              </div>
+              <div class="task__todo">
+                <input type="checkbox" name="" id="" class="task__todo-checkbox">
+                <p class="task__todo-text">Ut sit amet volutpat velit.</p>
+              </div>
+              <div class="task__todo">
+                <input type="checkbox" name="" id="" class="task__todo-checkbox">
+                <p class="task__todo-text">Suspendisse malesuada aliquam consectetur.</p>
+              </div>
+            </div>
+            <div class="task__images">
+              <img src="./images/god.jpg" alt="" class="task__image">              
+              <img src="https://i06.fotocdn.net/s205/94a92d5ade84ce23/public_pin_l/2362727257.jpg" alt="" class="task__image">
+              <img src="https://i.pinimg.com/736x/75/d6/b0/75d6b048f736e4bbd7e6210b71d4d400.jpg" alt="" class="task__image">
+            </div>
+            <button class="task__button button">Завершить</button>
+            <p class="task__worker">Фио сотрудника </p>
+            <p class="task__date">13.09.2024</p>
+          </div>
 
         </div>
       </div>
 
-      <div class="utils window">
-
+      <div class="utils window window_active" name="utils">
+        <button class="utils__button button">
+          <p class="utils__name text">Печать заявления</p>
+          <p class="utils__description text">Печать заявления</p>
+        </button>
+        <button class="utils__button button">
+          <p class="utils__name text">Заявка в АСЦ</p>
+          <p class="utils__description text">В данном разделе можно сформировать и отправть заявку логисту на пересылку товара а АСЦ.</p>
+        </button>
+        <button class="utils__button button">
+          <p class="utils__name text">Официальные ответы</p>
+          <p class="utils__description text">Здесь можно сформировать официальный ответ клиенту из множества готовых шаблонов, просто подставив нужную информацию.</p>
+        </button>
+        <button class="utils__button button">
+          <p class="utils__name text">Справка чека</p>
+          <p class="utils__description text">Сформировать справку чека для клиента.</p>
+        </button>
       </div>
     </main>
 
@@ -135,18 +286,20 @@
         <p class="footer__text text version">v 0.0.1 [Alpha]</p>
       </div>
       <div class="footer__doc footer__chapter">
-        <a href="" class="footer__link link">Условия использования</a>
-        <a href="" class="footer__link link">Политика в отношении обработки персональных данных</a>
+        <a href="./terms.html" class="footer__link link">Условия использования</a>
+        <a href="./personal.html" class="footer__link link">Политика в отношении обработки персональных данных</a>
       </div>
       <div class="footer__contact footer__chapter">
-        <button class="footer__report-button button">Сообщить об ошибке<ion-icon class="footer__report-icon" name="bug-outline"></ion-icon></button>
-        <p class="footer__text text version">Вы можете <a href="" class="footer__link link">поддержать разработчика</a></p> 
-        <a href="" class="footer__link link">Связаться с разработчиком</a>
+        <button class="footer__report-button button" style="display: none;">Сообщить об ошибке<ion-icon class="footer__report-icon" name="bug-outline"></ion-icon></button>
+        <a href="" class="footer__link link">поддержать разработчика</a>
+        <a href="https://qwertyxiii.github.io/developer/" class="footer__link link">Связаться с разработчиком</a>
       </div>
     </footer>
 
 
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script type="module" src="./index.js">
+  </script>
 </body>
 </html>

@@ -1,0 +1,20 @@
+.utils {
+  padding: 0 10px;
+  box-sizing: border-box;
+	column-count: 3;
+	column-gap: 10px;
+  width: 100%;
+  min-height: 1px;
+  max-height: min-content;
+  transition: 0.2s;
+}
+@media screen and (min-width: 1000px) {
+  .utils {
+    column-count: 4;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .utils {
+    column-count: 5;  
+  }
+}

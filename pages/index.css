@@ -1,7 +1,7 @@
 /*общ. стили*/
 @import url(../vendor/normalize.css);
 @import url(../blocks/page/page.css);
-/* DIFFERENT */
+/* MASTER CLASSES */
 @import url(../blocks/link/link.css);
 @import url(../blocks/text/text.css);
 @import url(../blocks/button/button.css);
@@ -18,13 +18,16 @@
 @import url(../blocks/window/window_active.css);
 /* WORKSPACE */
 @import url(../blocks/workspace/workspace.css);
+@import url(../blocks/window/window.css);
+@import url(../blocks/window/window_active.css);
 @import url(../blocks/workspace/__header/workspace__header.css);
-@import url(../blocks/workspace/__container/workspace__container.css);
+@import url(../blocks/workspace/__container-task/workspace__container-task.css);
 @import url(../blocks/workspace/__tab/workspace__tab.css);
 @import url(../blocks/workspace/__tab/workspace__tab_active.css);
 /* TASK */
 @import url(../blocks/task/task.css);
 @import url(../blocks/task/__name/task__name.css);
+@import url(../blocks/task/__indicator/task__indicator.css);
 @import url(../blocks/task/__description/task__description.css);
 @import url(../blocks/task/__todos/task__todos.css);
 @import url(../blocks/task/__todo/task__todo.css);
@@ -32,8 +35,14 @@
 @import url(../blocks/task/__todo-text/task__todo-text.css);
 @import url(../blocks/task/__images/task__images.css);
 @import url(../blocks/task/__image/task__image.css);
+@import url(../blocks/task/__button/task__button.css);
 @import url(../blocks/task/__worker/task__worker.css);
 @import url(../blocks/task/__date/task__date.css);
+/* UTILS */
+@import url(../blocks/utils/utils.css);
+@import url(../blocks/utils/__button/utils__button.css);
+@import url(../blocks/utils/__name/utils__name.css);
+@import url(../blocks/utils/__descripton/utils__description.css);
 /* FOOTER */
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__chapter/footer__chapter.css);

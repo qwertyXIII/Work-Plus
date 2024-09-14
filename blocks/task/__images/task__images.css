@@ -1,9 +1,5 @@
 .task__images {
-  width: 100%;
-  display: grid; 
-  grid-template-columns: 1fr 1fr; 
-  grid-template-rows: auto; 
-  gap: 0px 0px;
-  overflow: hidden;
-  gap: 5px;
+  box-sizing: border-box;
+	column-count: 2;
+	column-gap: 5px;
 }
