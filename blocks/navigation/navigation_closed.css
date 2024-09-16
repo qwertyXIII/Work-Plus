@@ -1,0 +1,12 @@
+.navigation_closed {
+  max-width: 0;
+  padding: 10px 0;
+  margin: 5px 0;
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 0;
+  transform: translate(-30px);
+}
+.navigation_closed * {
+  opacity: 0;
+}

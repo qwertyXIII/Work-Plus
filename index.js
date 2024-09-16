@@ -14,3 +14,8 @@ document.querySelectorAll('.navigation__button').forEach(e => {
     })
   })
 });
+
+document.querySelector('#navigation').addEventListener('click', () => {
+  document.querySelector('.navigation').classList.toggle('navigation_closed')
+  
+});

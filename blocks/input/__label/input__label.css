@@ -1,0 +1,22 @@
+.input__label {
+  position: absolute;
+  color: gray;
+  top: 15px;
+  left: 10px;
+  transition: 0.2s;
+  padding: 0 3px;
+  border-radius: 5px;
+  background-color: transparent;
+}
+.input__field:focus + .input__label {
+  background-color: white;
+  top: -7px;
+  color: black;
+  font-weight: 700;
+}
+.input__field:not(:placeholder-shown) + .input__label {
+  background-color: white;
+  top: -7px;
+  color: black;
+  font-weight: 700;
+}

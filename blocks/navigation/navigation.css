@@ -9,5 +9,6 @@
   margin: 5px 0 5px 5px;
   flex-grow: 1;
   align-items: stretch;
-  width: max-content;
+  max-width: 500px;
+  transition: .5s;
 }
